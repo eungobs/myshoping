@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Proceed to Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #4CAF50;
+            margin: 0;
+            padding: 0;
+            transition: background-color 1s ease;
+            position: relative;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .footer {
+            text-align: center;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+        }
+        .business-details {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Proceed to Payment</h1>
+    </div>
+    <div class="content">
+        <h2>Business Account Details</h2>
+        <div class="business-details">
+            <p><strong>Bank Account:</strong> 1301007321</p>
+            <p><strong>Account Name:</strong> Teekga Trading.cc</p>
+            <p><strong>Bank Name:</strong> Capitec Savings Account</p>
+        </div>
+
+        <h2>Unique Payment Code</h2>
+        <p id="uniqueCode"><?php echo generateUniqueCode(); ?></p>
+
+        <h2>Contact for Payment Confirmation</h2>
+        <p><strong>WhatsApp:</strong> <a href="https://api.whatsapp.com/send?phone=0606895891" target="_blank" rel="noopener">0606895891</a></p>
+        <p><strong>Email:</strong> <a href="#" onclick="openEmailClient('teekgatrading.com@gmail.com')">teekgatrading.com@gmail.com</a></p>
+    </div>
+    <div class="footer">
+        <a href="index.html">Back to Home</a>
+    </div>
+</div>
+
+<script>
+function openEmailClient(email) {
+    window.location.href = 'mailto:' + email;
+}
+</script>
+
+<?php
+function generateUniqueCode() {
+    // Generate a unique code based on customer-specific information (e.g., user ID)
+    // You need to implement your own logic to generate a unique code.
+    // For this example, let's use a random number.
+    return 'UNIQUE-' . rand(1000, 9999);
+}
+?>
+</body>
+</html>
