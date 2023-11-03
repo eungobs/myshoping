@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Sneakers</title>
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #4CAF50;
+                margin: 0;
+                padding: 0;
+                position: relative;
+            }
+            .container {
+                max-width: 1000px;
+                margin: 0 auto;
+                background-color: #ffffff;
+                padding: 20px;
+            }
+            .header {
+                text-align: center;
+                background-color: #4CAF50;
+                color: #fff;
+                padding: 10px;
+            }
+            .content {
+                padding: 30px;
+            }
+            .footer {
+                text-align: center;
+                background-color: #4CAF50;
+                color: #fff;
+                padding: 20px;
+            }
+            .product-list {
+                list-style-type: none;
+                display: grid;
+                grid-template-columns: repeat(6, 2fr);
+                gap: 40px;
+            }
+            .product-list li {
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            .product-image {
+                width: 150px;
+                height: auto;
+                cursor: pointer;
+                transition: transform 0.5s;
+            }
+            .product-image-small {
+                width: 100px;
+                height: auto;
+                cursor: pointer;
+                transition: transform 0.5s;
+            }
+            .product-image:hover {
+                transform: scale(1.8);
+            }
+            .product-price {
+                font-weight: bold;
+            }
+            .delivery-info {
+                font-weight: bold;
+            }
+            .green-text {
+                font-weight: bold;
+                font-size: 24px;
+            }
+            .contact-info {
+                font-weight: bold;
+            }
+            .sales-consultant {
+                font-weight: bold;
+            }
+            .sizes {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 40px;
+            }
+            .size-circle {
+                width: 30px;
+                height: 30px;
+                background-color: #007bff;
+                color: #fff;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Sneakers</h1>
+    </div>
+    <div class="content">
+        <h2>Explore Our Sneakers</h2>
+        <ul class="product-list">
+            <!-- Kids' Sneaker Products -->
+            <li class="product-item">
+                <img src="kiddiesjordan.jpg" alt="Kids' Sneaker 1" class="product-image-small" onclick="zoomImage(this)">
+                <p><strong>Kids' Sneaker</strong></p>
+                <p class="product-price">Jordan-R899.00</p>
+                <div class="size">Size</div>
+                <div class="size-circle">6</div>
+                <div class="size-circle">7</div>
+                <div class="size-circle">8</div>
+                <div class="size-circle">9</div>
+                <div class="size-circle">10</div>
+                <div class="size-circle">11</div>
+                <div class="size-circle">12</div>
+                <div class="size-circle">13</div>
+                <div class="size-circle">1</div>
+                <div class="size-circle">2</div>
+            </li>
+            
+            <li class="product-item">
+                <img src="kiddiesconverse.jpg" alt="Kids' Sneaker 2" class="product-image-small" onclick="zoomImage(this)">
+                <p><strong>Kids' Sneaker</strong></p>
+                <p class="product-price">Converse-R449.99</p>
+                <div class="size">Size</div>
+                <div class="size-circle">0</div>
+                <div class="size-circle">1</div>
+                <div class="size-circle">2</div>
+                <div class="size-circle">3</div>
+                <div class="size-circle">4</div>
+                <div class="size-circle">5</div>
+            </li>
+
+            <li class="product-item">
+                <img src="kiddiesnike.jpg" alt="Kids' Sneaker 3" class="product-image-small" onclick="zoomImage(this)">
+                <p><strong>Kids' Sneaker</strong></p>
+                <p class="product-price">Nike-R499.99</p>
+                <div class="size">Size</div>
+                <div class="size-circle">6</div>
+                <div class="size-circle">7</div>
+                <div class="size-circle">8</div>
+                <div class="size-circle">9</div>
+                <div class="size-circle">10</div>
+                <div class="size-circle">11</div>
+                <div class="size-circle">12</div>
+                <div class="size-circle">13</div>
+                <div class="size-circle">1</div>
+                <div class="size-circle">2</div>
+            </li>
+
+            <li class="product-item">
+                <img src="kiddiesgreen.jpg" alt="Kids' Sneaker 4" class="product-image-small" onclick="zoomImage(this)">
+                <p><strong>Kids' Sneaker</strong></p>
+                <p class="product-price">Nike-R599.00</p>
+                <div class="size">Size</div>
+                <div class="size-circle">6</div>
+                <div class="size-circle">7</div>
+                <div class="size-circle">8</div>
+                <div class="size-circle">9</div>
+                <div class="size-circle">10</div>
+                <div class="size-circle">11</div>
+                <div class="size-circle">12</div>
+                <div class="size-circle">13</div>
+                <div class="size-circle">1</div>
+                <div class="size-circle">2</div>
+            </li>
+
+            <li class="product-item">
+                <img src="kiddiespink.jpg" alt="Kids' Sneaker 5" class="product-image-small" onclick="zoomImage(this)">
+                <p><strong>Kids' Sneaker</strong></p>
+                <p class="product-price">Nike-R599.00</p>
+                <div class="size">Size</div>
+                <div class="size-circle">6</div>
+                <div class="size-circle">7</div>
+                <div class="size-circle">8</div>
+                <div class="size-circle">9</div>
+                <div class="size-circle">10</div>
+                <div class="size-circle">11</div>
+                <div class="size-circle">12</div>
+                <div class="size-circle">13</div>
+                <div class="size-circle">1</div>
+                <div class="size-circle">2</div>
+            </li>
+        </ul>
+
+        <ul class="product-list">
+            <!-- Adult Sneaker Products -->
+            <li class="product-item">
+                <img src="adidas.jpg" alt="Adult Sneaker 1" class="product-image-small" onclick="zoomImage(this)">
+                <p><strong>Adult Sneaker</strong></p>
+                <p class="product-price">adidas-R999.00</p>
+                <div class="size">Size</div>
+                <div class="size-circle">3</div>
+                <div class="size-circle">4</div>
+                <div class="size-circle">5</div>
+                <div class="size-circle">6</div>
+                <div class="size-circle">7</div>
+                <div class="size-circle">8</div>        
+            </li>
+            
+            <li class="product-item">
+                <img src="womensconverse.jpg" alt="Adult Sneaker 2" class="product-image-small" onclick="zoomImage(this)">
+                <p><strong>Adult Sneaker</strong></p>
+                <p class="product-price">Converse-R899.00</p>
+                <div class="size">Size</div>
+                <div class="size-circle">3</div>
+                <div class="size-circle">4</div>
+                <div class="size-circle">5</div>
+                <div class="size-circle">6</div>
+                <div class="size-circle">7</div>
+                <div class="size-circle">8</div> 
+            </li>
+
+            <li class="product-item">
+                <img src="jordan.jpg" alt="Adult Sneaker 3" class="product-image-small" onclick="zoomImage(this)">
+                <p><strong>Adult Sneaker</strong></p>
+                <p class="product-price">Nike-Jordan-R999.00</p>
+                <div class="size">Size</div>
+                <div class="size-circle">3</div>
+                <div class="size-circle">4</div>
+                <div class="size-circle">5</div>
+                <div class="size-circle">6</div>
+                <div class="size-circle">7</div>
+                <div class="size-circle">8</div> 
+            </li>
+
+            <li class="product-item">
+                <img src="airmax.jpg" alt="Adult Sneaker 4" class="product-image-small" onclick="zoomImage(this)">
+                <p><strong>Adult Sneaker</strong></p>
+                <p class="product-price">Airmax-R999.00</p>
+                <div class="size">Size</div>
+                <div class="size-circle">3</div>
+                <div class="size-circle">4</div>
+                <div class="size-circle">5</div>
+                <div class="size-circle">6</div>
+                <div class="size-circle">7</div>
+                <div class="size-circle">8</div> 
+            </li>
+
+            <li class="product-item">
+                <img src="adultnikee.jpg" alt="Adult Sneaker 5" class="product-image-small" onclick="zoomImage(this)">
+                <p><strong>Adult Sneaker</strong></p>
+                <p class="product-price">Nike-Jordan-R999.00</p>
+                <div class="size">Size</div>
+                <div class="size-circle">3</div>
+                <div class="size-circle">4</div>
+                <div class="size-circle">5</div>
+                <div class="size-circle">6</div>
+                <div class="size-circle">7</div>
+                <div class="size-circle">8</div> 
+            </li>
+
+            <li class="product-item">
+                <img src="reebok.jpg" alt="Adult Sneaker 6" class="product-image-small" onclick="zoomImage(this)">
+                <p><strong>Adult Sneaker</strong></p>
+                <p class="product-price">Reebok Classic-R999.00</p>
+                <div class="size">Size</div>
+                <div class="size-circle">3</div>
+                <div class="size-circle">4</div>
+                <div class="size-circle">5</div>
+                <div class="size-circle">6</div>
+                <div class="size-circle">7</div>
+                <div class="size-circle">8</div> 
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <a href="index.html">Back to Home</a>
+    </div>
+
+    <script>
+        function zoomImage(image) {
+            image.classList.toggle("product-image-small");
+        }
+    </script>
+
+    <!-- JavaScript for enabling image zoom on click -->
+    <script>
+        const productImages = document.querySelectorAll('.product-image');
+
+        productImages.forEach((image) => {
+            image.addEventListener('click', () => {
+                image.style.transform = 'scale(2)'; // Zoom effect on click
+            });
+        }
+        );
+    </script>
+</body>
+</html>
